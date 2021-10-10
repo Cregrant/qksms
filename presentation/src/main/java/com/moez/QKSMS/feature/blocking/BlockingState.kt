@@ -20,5 +20,12 @@ package com.moez.QKSMS.feature.blocking
 
 data class BlockingState(
     val blockingManager: String = "",
-    val dropEnabled: Boolean = false
-)
+    val dropEnabled: Boolean = false,
+    val spamSwitchEnabled: Boolean = false,
+    val queueSizeSummary: String = "",
+    val queueSizeId: Int = 0,
+    val receiveWindowSummary: String = "",
+    val receiveWindowId: Int = 0,
+    val pauseTimeSummary: String = "",
+    val pauseTimeId: Int = 0
+    )

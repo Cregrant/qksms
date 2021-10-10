@@ -406,6 +406,20 @@
         <item>2000 Кб</item>
         <item>Без сжатия</item>
     </string-array>
+    <string-array name="spam_time_values">
+        <item>10 секунд</item>
+        <item>20 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минуты</item>
+        <item>5 минут</item>
+    </string-array>
+    <string-array name="spam_pause_values">
+        <item>30 секунд</item>
+        <item>1 минута</item>
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>30 минут</item>
+    </string-array>
     <string-array name="qk_responses">
         <item>Хорошо</item>
         <item>Дайте мне минуту</item>
@@ -420,4 +434,9 @@
         <item>LOL</item>
         <item>Это нормально</item>
     </string-array>
+    <string name="spam_switch_title">Защита от смс спама</string>
+    <string name="spam_switch_summary">Заглушить уведомления, если смс поступают слишком быстро</string>
+    <string name="spam_queue_size">Количество сообщений</string>
+    <string name="spam_receive_window">Сообщения приняты в течение</string>
+    <string name="spam_block_time">Время приостановки уведомлений</string>
 </resources>

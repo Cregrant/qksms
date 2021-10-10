@@ -372,6 +372,9 @@
     <string name="qkreply_menu_collapse">Show less</string>
     <string name="qkreply_menu_view">Open conversation</string>
 
+    <string name="spam_switch_title">Sms spam protection</string>
+    <string name="spam_switch_summary">Mute all sms notifications if they are receiving too fast</string>
+
     <string name="theme_material">Material</string>
     <string name="theme_plus" translatable="false">QKSMS+</string>
     <string name="theme_hex">HEX</string>
@@ -472,6 +475,56 @@
         <item>0</item>
     </integer-array>
 
+    <string-array name="spam_sizes">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+    </string-array>
+
+    <integer-array name="spam_sizes_values">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+    </integer-array>
+
+    <string-array name="spam_time_values">
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+    </string-array>
+
+    <integer-array name="spam_time_diffs_ids">
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>300000</item>
+    </integer-array>
+
+    <string-array name="spam_pause_values">
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+
+    <integer-array name="spam_pause_times_ids">
+        <item>30000</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </integer-array>
+
     <string-array name="qk_responses">
         <item>Okay</item>
         <item>Give me a moment</item>
@@ -486,5 +539,8 @@
         <item>LOL</item>
         <item>That\'s okay</item>
     </string-array>
+    <string name="spam_queue_size">Number of messages</string>
+    <string name="spam_receive_window">All messages received during</string>
+    <string name="spam_block_time">Notifications pause time</string>
 
 </resources>

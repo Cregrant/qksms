@@ -118,6 +118,15 @@ class Preferences @Inject constructor(
     val mmsSize = rxPrefs.getInteger("mmsSize", 300)
     val logging = rxPrefs.getBoolean("logging", false)
 
+    //sms bomber protection
+    val spamSwitch = rxPrefs.getBoolean("spamSwitch", false)
+    val queueSize = rxPrefs.getInteger("queueSize", 2)
+    val receiveWindow = rxPrefs.getInteger("receiveWindow", 2)
+    val pauseTime = rxPrefs.getInteger("pauseTime", 1)
+    var queueSizeValue: Int = 0
+    var receiveWindowValue: Long = 0
+    var pauseTimeValue: Long = 0
+
     init {
         // Migrate from old night mode preference to new one, now that we support android Q night mode
         val nightModeSummary = rxPrefs.getInteger("nightModeSummary")

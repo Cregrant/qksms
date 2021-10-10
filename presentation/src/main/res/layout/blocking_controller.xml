@@ -60,6 +60,40 @@
             android:layout_height="wrap_content"
             app:title="@string/blocked_messages_title" />
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="?android:attr/divider" />
+
+        <com.moez.QKSMS.common.widget.PreferenceView
+            android:id="@+id/spamSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:summary="@string/spam_switch_summary"
+            app:title="@string/spam_switch_title"
+            app:widget="@layout/settings_switch_widget" />
+
+        <com.moez.QKSMS.common.widget.PreferenceView
+            android:id="@+id/spamQueueSizeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/spam_queue_size" />
+
+        <com.moez.QKSMS.common.widget.PreferenceView
+            android:id="@+id/spamReceiveWindowButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/spam_receive_window" />
+
+        <com.moez.QKSMS.common.widget.PreferenceView
+            android:id="@+id/spamPauseTimeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/spam_block_time"
+            app:summary="Some summary" />
+
     </LinearLayout>
 
 </ScrollView>

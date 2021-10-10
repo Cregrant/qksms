@@ -19,6 +19,7 @@
 package com.moez.QKSMS.feature.blocking
 
 import com.moez.QKSMS.common.base.QkViewContract
+import com.moez.QKSMS.common.widget.PreferenceView
 import io.reactivex.Observable
 
 interface BlockingView : QkViewContract<BlockingState> {
@@ -27,7 +28,16 @@ interface BlockingView : QkViewContract<BlockingState> {
     val blockedNumbersIntent: Observable<*>
     val blockedMessagesIntent: Observable<*>
     val dropClickedIntent: Observable<*>
+    val spamSwitchClickedIntent: Observable<*>
 
+    fun preferenceClicks(): Observable<PreferenceView>
+    fun queueSizeSelected(): Observable<Int>
+    fun receiveWindowSelected(): Observable<Int>
+    fun pauseTimeSelected(): Observable<Int>
+
+    fun showQueueSizeDialog()
+    fun showReceiveWindowDialog()
+    fun showPauseTimeDialog()
     fun openBlockingManager()
     fun openBlockedNumbers()
     fun openBlockedMessages()
